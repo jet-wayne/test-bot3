@@ -1,0 +1,60 @@
+openapi: 3.0.0
+info:
+  title: Starhub FAQ Search API
+  version: 1.0.0
+servers:
+  - url: https://starhub-faq-search-xiswadvybq-as.a.run.app/api/search
+
+paths:
+  /api/search:
+    post:
+      summary: Search Starhub FAQs
+      description: Search Starhub FAQs and retrieve relevant results.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                query:
+                  type: string
+                  description: The search query.
+      responses:
+        "200":
+          description: Successful search response.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        document:
+                          type: object
+                          properties:
+                            name:
+                              type: string
+                            id:
+                              type: string
+                            structData:
+                              type: object
+                              properties:
+                                answer:
+                                  type: string
+                                question:
+                                  type: string
+                                summary: # Focus on this field
+                                  type: string
+                  totalSize:
+                    type: integer
+                  attributionToken:
+                    type: string
+                  nextPageToken:
+                    type: string
+        "400":
+          description: Bad Request. The request payload is invalid.

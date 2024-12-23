@@ -1,0 +1,8 @@
+google-cloud-discoveryengine
+google-cloud-storage
+fastapi[standard]
+coloredlogs
+python-multipart
+google-cloud-aiplatform
+google-api-core
+google-cloud-dialogflow-cx

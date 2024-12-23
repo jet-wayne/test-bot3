@@ -1,0 +1,606 @@
+question: ECG Reservation
+answer: ECG Reservation is applicable for certain product only, SWE L2VPN PP/PMP SH Access, SWE L2VPN PP (Full SH), SWE Port PMP Access and SWE PP/SDS Access
+
+question: Definition of Express Mode and AOH
+answer: Siebel must indicate as Express Mode and AOH if any. Express Mode is not equal to AOH. Express Order will be less than standard lead time depend on the PM/AM, how they going to manage ( FE, SHIFT etc ).
+
+question: How do BDM team handle the termination order or cessation order that is created from ITX system ?
+answer: Termination order or cessation order created in ITX system will be auto convert to suspension order, BDM will need to complete the Suspend order within 3 working days and then the  5th working day only will convert the suspension order to termination order or cessation order. To be deliver by Accenture in phase 3.
+
+question: Did customer allow to reinstate the termination order or cessation order ? If customer or StarHub accidentally submited the wrong termination order or cessation order.
+answer: Grace period to reuse or retain the SID is 5 working days only, customer cannot reinstate the SID after the grace period 5 working days. 
+
+question: what is meaning SHIFT02 ?
+answer: Changing of RFS date without any action from BDM
+
+question: Who is the BDM personnel for ELL, DLC, ISDN30, SDS PP, IPTV product ?
+answer: Handle by BDM team, Woon Shire Lee
+
+question: Who is the BDM personnel for SWE, Global IPVPN, Enterprise Internet product ?
+answer: Handle by BDM team, Lew Kuo Shian
+
+question: Who is the BDM personnel for Mobile, BB, PSTS, SDS DWS, DCI, SIP, UC product ?
+answer: Handle by BDM team, Saw Su Myat
+
+question: Suspend Order ?
+answer: Standard grace period for the suspend order is 3 months, after 3 months should receive the Termination Order or Resume Order.
+
+question: What is BDM's role in Service Delivery
+answer: BDM handles resource assignment for service order, service design and configuration for enterprise transmission and IP layer services in StarHub's infrastructure.
+
+question: Bandwidth upgrade or downgrade for NC access
+answer: Do check with non-res_fulfillment@nucleusconnect.com for any bandwidth related issue.
+
+question: Does BDM work 24x7 hrs?
+answer: No.  But BDM works after office hour, weekends and holidays on a pre-scheduled basis with 3 days in advance notice only.
+
+question: What's the definition of parallel relocation and hot relocation?
+answer: Parallel or Hot relocation is defned with respect to customer's end perspective.  For parallel relocation, the new and old circuits can co-exist.  For Hot relocation, only 1 circuit exist at anytime.  
+
+question: Can hot relocation raised for SDS DWDS
+answer: No Hot relocation for SDS-DWS. Only allow New and Cesase application
+
+question: Leadtime for SDS DWDS with reservation
+answer: 21 working days with available cap and ECG reservation. 
+
+question: Leadtime for SDS DWDS with reservation
+answer: will refer the lead time given by planner
+
+question: Can we set MTU size 
+answer: Default value is already set at 9600bytes, jumbo frame
+
+question: Who should i look for if Feasibility Check Result  (FC000xxxxx) failed
+answer: To check with tranmission planner or sales op to run capacity check again.
+
+question: E2E was not tally with require route for SDS DWDS, how should i proceed
+answer: Sales op to issue another ECG reservation, input in Siebel comments to load in SHIFT and email BDM on the changes. 
+
+question: There are 2 service types available
+answer: There are LAN and WAN, customer to provide the service type during application.
+
+question: What are the available bandwidth for SDS DWDS
+answer: There are 1GE, 10GE, 100GE, OTU2, OTU2e, OTU4
+
+question: There is a change of Service ID, can BDM manually amend in SHIFT
+answer: No, the correct way is to Cancel the order and Create the proper SID in Siebel and SHIFT. 
+
+question: Is Auto negotiation supported for all DWDS service
+answer: Auto Negotiation is Not applicable for SDS-DWS
+
+question: Can link pass thru and ALS be set
+answer: Default value will be NO and BDM will set it manually  to Yes when it required
+
+question: Duplex mode can be changed for SDS-DWS
+answer: Not application for SDS-DWS
+
+question: Is SDS-DWS protected?
+answer: for SDS-DWS, regardless of standard or premium request, will always provide protection but not the last mile fiber from RC.
+
+question: what is recovery time to switch over protection path
+answer: Recovery time lower than or equal to 50 msec 
+
+question: Can be Point to Multi Point for SDS?
+answer: SDS-DWS is layer1 service only allow Point to Point
+
+question: what is committed RTD (Round Trip Delay)
+answer: Expected 2 ~ 4ms
+
+question: What is Service Availability(SA) for SDS-DWS
+answer: 
+99.95% (Protection - Core Ring)
+
+question: Can request Diversity for SDS-DWS
+answer: Yes, can be diversed from another SDS-DWS service
+
+question: Is KMZ file required for SDS-DWS?
+answer: KMZ is Non mandatory for non-customized route. For the customized routed required, pls refer to fiber team and Tx planner team
+
+question: What is the SDS-DWS service type shall be selected for Premium Internet
+answer: LAN interface
+
+question: What is the SDS-DWS service type shall be selected for SWE intranet
+answer: LAN interface
+
+question: Can be raised express order for SDS-DWS?
+answer: Standard lead time for SDS-DWS is 21 working days with capacity. No express order due to last mile fiber to be laid
+
+question: How can I request for an earlier RFS date after work order is submitted
+answer: Approach Project Manager for assistance or liaise with all stakeholders involved in the delivery.
+
+question: Bandwidth can be upgrade/downgrade for SDS-DWS
+answer: SDS-DWS is not allow modification order for upgrade / downgrade. Will require new service order and cease old service.
+
+question: Who can be checked with SDS-PP, SDS-MDWDM and SDS-SDI orders
+answer: Pls check with Tx planner team , Ong Wee Keong  and  ZIHAO Fan for SDS-PP, SDS-MDWDM and SDS-SDI
+
+question: Who is the contact point for Tx planner?
+answer: Handled by Ong Wee Keong  and  ZIHAO Fan.
+
+question: Is SDS-DWS serive provide international?
+answer: Currently SDS-DWS equpment is extended to Hongkong and Japan. Will require route assignement by planner team and international team
+
+question: Can I change SID with same WO number?
+answer: Can not revise and change SID upon same Work order number. Will require to cancel the order and raise new WO.
+
+question: Where can I get ETE diagram?
+answer: ?
+
+question: Who is the Product Manager for SDS service?
+answer: Leow Guo Quan
+
+question: Can BDM support after office hour
+answer: Inform BDM at least 3 working days in advance.
+
+question: How can I change the requirements after order is closed?
+answer: Pls raise Modification order for the changes.
+
+question: SDS-DWS, can we change the A or Z end address?
+answer: Pls revise the order and provide new ECG according to the new address
+
+question: Can I change sfp interface type 1330nm or 1550nm
+answer: Pls refer to planner team, Preston/Zihao for the action required.
+
+question: Who can contact to change last mile fiber?
+answer: Pls refer to WO(External works) team for the last mile fiber
+
+question: Who can contact for SDS-DWS on site testing?
+answer: Pls refer to high speed FE team, Lee Joo Teck
+
+question: Is SDS-DWS circuit service affecting if there are changes in inteface type (LAN/WAN)
+answer: Yes, it is service affecting.
+
+question: Leadtime for SmartUC, SIP, BB 
+answer: 8 working days after work order is created with capacity.
+
+question: Customer wants to bring forward RFS, can BDM support
+answer: Please check with BDM, provisioning had completed and to check with FOS on contractor handling
+
+question: There is a change of service VLAN due to vlan conflict, but line is already up, does contractor need to go for site visit again
+answer: Sales to raise a modify order and to inform BDM to swing over. Sales to check with FOS and get the assigned contractor to contact customer; to confirm is their internet session ok and can proceed to close the order without site visit.
+
+question: how can change IP address to dynamic to static
+answer: Need to raise modifcation order to change static IP
+
+question: can reserve ECG for Smart SIP
+answer: Yes, will require ECG reservation for SmartSIP when raise order
+
+question: can reserve ECG for Smart UC and Biz BB
+answer: No ECG can be submitted for Smart UC and Biz BB
+
+question: Is any BDM action for Suspend and resume order state?
+answer: Suspend and resume order is system automated. BDM takes action only upon receiving a cessation order in SHIFT. Orders for suspension or resumption will not be received in SHIFT.
+
+question: How many coverage for SmartUC, SIP and BB?
+answer: There are 2 options, NGN or Starhub fiber coverage
+
+question: IHow can proceed order if no coverage of SH fiber
+answer: If the customer site is not SH fiber coverage, will need to cancel order and raise new order for NGN coverage
+
+question: what is lead time there is no equipment
+answer: Pls refer to Tx planner for the top up leadtime.
+
+question: I am not able to find the work order in shift, who should I refer to
+answer: Please check with SHIFT OSS team
+
+question: I had not recieved task in shift
+answer: Please refer to SHIFT workflow
+
+question: what is MTU size
+answer: default MTU size is 1500
+
+question: What is connectivity of smartvoice and BB?
+answer: ELL connection is Point to multi point
+
+question: what type of port interface BW at client end?
+answer: At client end, service port is using 1GE port interface
+
+question: Can customer reuse the old IP address of previous order when they raise new service?
+answer: old IP can not be reuse because IP address is auto populate by the system when the new order is loaded in SHIFT.
+
+question: Can do force closure the relocation order in SHIFT?
+answer: Due to discrependcy in SHIFT and PE configuration, SHIFT can not do force closure without cut over to New relocation/assignment.
+
+question: Who is the contact point for planner?
+answer: Tx planner Nicholo, Yuxia, Chuan Wi
+
+question: Is hot upgrade/downgrade of circuit service affecting?
+answer: No if there's no change of port interface. Yes if there's any changes to the port interface.
+
+question: Who can i check if revised RFS is not reflected in SHIFT?
+answer: Pls refer to SHIFT Ops team
+
+question: Who is the contact point for SHIFT?
+answer: SHIFT Ops team
+
+question: Who can i check if ETE is not ready in SHIFT
+answer: Pls refer BDM and TX planner
+
+question: If site is not capacity but service need to be up urgent, who can i contact?
+answer: Pls refer to Tx planner for earliest leadtime for top up capacity
+
+question: Can I change A and Z end address for SH coverage UC and SmartSIP?
+answer: No relocation order for SH UC and SIP order. Only allow new and cease.
+
+question: who can i contact to change NE after site survey?
+answer: Pls refer to FOS team and BDM
+
+question: Who is the assigned contractor? 
+answer: The assigned contractor can be Bee Teck, Segen or Lucky Joint. You can check with FOS team.
+
+question: who is product manager for Smart voice and Biz BB?
+answer: Victor Koo for Biz BB, Samuel for Smart UC, Harville for Smart SIP
+
+question: Who can contact if customer change order to express mode.
+answer: Pls refer to BDM and FOS team for the activation
+
+question: Design failed due to NC Vlan conflict, who can i check with?
+answer: Pls refer to order creator to verify the NC Vlan.
+
+question: What is the latency for ELL Low Latency?
+answer: The latency for ELL Low Latency is below 1ms.
+
+question: What is the default MTU size for ELL Low Latency?
+answer: The default MTU size for ELL Low Latency is 1608.
+
+question: What is the default CBS value for ELL Low Latency?
+answer: The default CBS value for ELL Low Latency is 128.
+
+question: Who is the Product Manager for ELL Low Latency service?
+answer: The Product Manager for ELL Low Latency service is Wong Ting Hwee.
+
+question: What is the lead time for ELL Service with reservation?
+answer: 8 working days after work order is created with successful and valid ECG Reservation.
+
+question: What is the lead time for ELL Service if feasibility check fail?
+answer: 22 working days after work order is created if there is no PCTN Mux/Equipment.
+
+question: What is the lead time for hot relocation of ELL circuits
+answer: If there's capacity, the lead time is  8 working days . If there's no capacity, refer to Chuan Wi for advise.
+
+question: What is the lead time for parallel relocation of ELL circuit?
+answer: If there's capacity, the lead time is 8 working days . If there's no capacity, refer to Chuan Wi for advise.
+
+question: What is the lead time for hot upgrade/downgrade of ELL circuit?
+answer: The lead time is 8 working days if there's no change of interface. If circuit is more than 1Gb, pls submit a SURF+ to TX planner
+
+question: What is the lead time for changing of MTU size for ELL circuit?
+answer: The lead time is 8 working days.
+
+question: What is the lead time for changing of port interface for ELL circuit?
+answer: The lead time is 8 working days.
+
+question: What is the default MTU size for ELL circuit?
+answer: The default MTU size for ELL circuit is 1522.
+
+question: What is the default Jumbo Frame size for ELL circuit?
+answer: The default Jumbo frame size for ELL circuit is 9000.
+
+question: What is the lead time to enable L2 protocol transparency
+answer: The lead time is 8 working days.
+
+question: What is the lead time to enable Link Passthrough?
+answer: The lead time is 8 working days.
+
+question: Is hot relocation of ELL circuit service affecting?
+answer: Yes, hot relocation is service affecting and needs a maintenance window to perform the change
+
+question: Is parallel relocation of PCTN circuits service affecting?
+answer: No, parallel relocation is not service affecting to the old circuit
+
+question: Is hot upgrade/downgrade of ELL circuit service affecting?
+answer: No if there's no change of port interface. Yes if there's any changes to the port interface.
+
+question: Is changing of MTU size for ELL circuit service affecting?
+answer: Yes, changing of MTU size is service affecting.
+
+question: Is changing of port interfaces for ELL circuit service affecting?
+answer: Yes, changing of port interfaces is service affecting.
+
+question: Is changing of port speed in NCE service affecting?
+answer: Yes, changing of port speed is service affecting.
+
+question: Is enabling L2 protocol transparency service affecting?
+answer: No, enabling of link passthrough in NCE is not service affecting
+
+question: Is enabling Link passthrough in NCE service affecting?
+answer: No, enabling of link passthrough in NCE is not service affecting
+
+question: What is the bandwidth offering for ELL?
+answer: 2M, 4M, 6M, 8M, 10M, 20M, 30M, 40M, 50M, 60M, 70M, 80M, 90M, 100M, 200M, 300M, 400M, 500M, 600M, 700M, 800M, 900M, 1G, 2G, 3G, 4G
+
+question: How can I submit a 2G and above order?
+answer: You need to submit a SURF+ to Tx planner.
+
+question: Can I request for a 10G port for a 1G and below service?
+answer: You need to send your justification to Product and TX planner.
+
+question: What should I do if feasibility check fail?
+answer: If the site is covered, you can send in your order with a longer lead time of 22 working days.
+
+question: What should I do if my ECG reservation has expired?
+answer: Submit a new ECG reservation and revise the work order with the new ECG reservation ID.
+
+question: What is the express lead time?
+answer: The express lead time is 4 to 7 working days with valid ECG reservation after work order is created.
+
+question: The site that I am requesting for is not covered.
+answer: You can send an email to Gateway - Arthur Hoon.
+
+question: How can I request for an earlier RFS date after work order is submitted
+answer: Approach Project Manager for assistance or liaise with all stakeholders involved in the delivery to workout a shorter lead time if possible.
+
+question: What is hot relocation?
+answer: Hot relocation is when relocation is at one end only. There will be downtime. There is no change in Service ID.
+
+question: What is parallel relocation?
+answer: New A and Z end will be created. New Service ID will be created. A cease work order for the old circuit has to be submitted
+
+question: What is hot upgrade/downgrade?
+answer: Upgrade of existing circuit with no change in A and Z end port assigment and no change in Service ID.
+
+question: What is parallel upgrade/downgrade?
+answer: New A and Z end will be created. New Service ID will be created. A cease work order for the old circuit has to be submitted.
+
+question: How can I relocate within the same building?
+answer: You can submit the modification work order. There will be no change in port assignment UNLESS the building has more than one MDF room.
+
+question: How can I relocate within the same building on the same floor?
+answer: You can submit the modification work order. There will be no change in port assignment
+
+question: What is a diversity order?
+answer: A diversity order is an order that has requirement to use a different equipment or card from another order in order to ensure connectivity. 
+
+question: What are the diversity options available?
+answer: Mux diversity, card diversity.
+
+question: How can I submit an order with diversity requirement?
+answer: Submit a ECG reservation for the first order.  After the first order is submitted, submit the second order. Indicate the diversity clearly in both work orders including the x-ref Service ID
+
+question: Can I retain port for parallel relocation?
+answer: This option is not available.
+
+question: Can I retain Service ID for parallel relocation?
+answer: This option is not available.
+
+question: Can I suspend a service?
+answer: Yes
+
+question: Can I resume a service?
+answer: Yes
+
+question: I have accidentally submitted a wrong Service ID for cessation, what should I do?
+answer: Cancel the cease work order as soon as possible or submit a reinstate (new) order if the circuit has been disconnected.
+
+question: How can I change the VLAN ID of a service?
+answer: Revise the work order with the new VLAN ID.
+
+question: How can I change the bandwidth of a service?
+answer: Revise the work order with the new bandwidth.
+
+question: How can I change the A or Z end address?
+answer: Submit a new ECG reservation, indicate the new ECG reservation, revise the work order with the new address and ECG reservation.
+
+question: Who should assigned the VLAN ID?
+answer: Customer should assign and keep track of the VLAN ID of their trunks.
+
+question: Do I need to assign a Project Manager for my order?
+answer: Yes, Project Manager is required for all ELL service delivery.
+
+question: What is the CIR and PIR value for ELL Business?
+answer: CIR is 50% based on PIR.
+
+question: What is the difference between a PP (Point-to-Point) and a PMP (Point-to-Multipoint) Order?
+answer: A PTP order is an order that has delicated A & Z port assignment and usually does not have VLAN assigned to them. A PMP order usually has a pre-assigned Parent trunk port as A-end with a VLAN assigned to it and a delicated Z-end port assignment at the customer end.
+
+question: How is testing conducted for PP (Point-to-Point) and PMP (Point-to-Multipoint) services?
+answer: For PP circuits, FE/contractors will put hard loop at one end of the circuits and conduct the testing themselves. 
+For PMP circuits, BDM will provide loop at one end for half-circuit testing together with the FE/contractors.
+
+question: Is network diagram mandatory for ELL service?
+answer: Network diagram is not mandatory for ELL service.
+
+question: What is the bandwidth offering for ELL Parent / Hub?
+answer: The bandwidth offering for ELL Parent / Hub is 1G or 10G.
+
+question: What is the available service type available for ELL?
+answer: The available service type available for ELL is ELL Point to Point and ELL Point to Multipoint.
+
+question: I want to to submit a SDH order
+answer: SDH is not available anymore.
+
+question: What is the throughput for ELL service?
+answer: Throughput is estimated to be around 95% of the subscribed bandwidth.
+
+question: What is the difference between ELL and ELL Business?
+answer: The CIR is 50% of PIR for ELL Business and Link  State Passthrough (LPT) option is not available for ELL Business.
+
+question: What is the available ELL Point to Multipoint setup?
+answer: The available ELL Point-to-Multipoint setup is Tagged or Untagged.
+
+question: Who is the Product Manager for ELL service?
+answer: The Product Manager for ELL service is Wong Ting Hwee.
+
+question: Who is the assigned contractor? 
+answer: The assigned contractor can be Bee Teck, Segen or Lucky Joint. You can check with FOS team.
+
+question: Is there any advance notice required for after office hours standby?
+answer: Inform BDM at least 3 working days in advance.
+
+question: Is StarHub network MEF 2.0 compliant?
+answer: Not all equipment in StarHub Network is MEF 2.0 compliant.
+
+question: Who is the manager of BDM?
+answer: The manager of BDM is Lynn Lim.
+
+question: What should I do if I need to change requirements after the order is closed?
+answer: Please raise a modify order based on the existing circuit.
+
+question: How can I check the current Parent trunk utilization?
+answer: Please refer to the Trunk_Utilization report in SHIFT for Parent Trunk utilization.
+
+question: How can I check the child circuits under a certain Parent Trunk?
+answer: Please refer to the Trunk_Utilization_with_Child_Circuits report in SHIFT for the child circuits in specific Parent Trunk.
+
+question: How can I check the VLAN details for a certain Parent Trunk?
+answer: Please refer to the Trunk_Utilization_with_Child_Circuits report in SHIFT for the child circuits in specific Parent Trunk.
+
+question: How can I check the E2E/Port Assignment for specific circuit?
+answer: Please refer to the E2E_by_Service_id report in SHIFT for E2E report and port assignment for specific circuits.
+
+question: What is the Jumbo Frame size for NGN service?
+answer: The Jumbo Frame size for NGN service is 1900
+
+question: Link state pass through
+answer: Link state pass through is not supported for ELL Low Latency, ELL Point to Multipoint and ELL Business
+
+question: Can I change my order from one product to another?
+answer: The order needs to be cancelled and recreated with the correct Product
+
+question: Change of Service ID
+answer: The order needs to be cancelled and recreated with the correct Service ID
+
+question: I have not receive my task in SHIFT.
+answer: You can refer to SHIFT workflow
+
+question: My order is not in SHIFT
+answer: You can refer to SHIFTOps
+
+question: How long can I keep my order open?
+answer: For orders that are open for more than 6 months, you will have to cancel the work order and submit again if required.
+
+question: Retain WAN IP address from a different product ?
+answer: Retention of WAN IP address or point to point WAN IP address is applicable for only Value Internet + and Business Internet.
+
+question: Retain LAN IP address from a difference product ?
+answer: Retention of LAN IP address is applicable for Premium Internet, Value Internet + and Business Internet.
+
+question: What are the types of network diversity ?
+answer: CO Diversity, Path/Fiber Diversity, Port Diversity.
+
+question: CO Diversity only applicable to StarHub Covered Site ?
+answer: The CO selection is determined by the SHIFT, and it's based on the nearest CO. ITX to be captured if CO diversity is required and CO diversity is only applicable on the StarHub Covered site.
+
+question: What is the work order status ?
+answer: Do check the Siebel Workflow (http://10.200.33.73/Reports/report/Workflow/SiebelWorkflow) in order to find out the work order status. 
+
+question: Network Diagram (NWD) is mandatory ?
+answer: Network Diagram is mandatory for SWE Intranet product. For the rest of the product is based on the complexity of the design such as Dual/Multi-homed BGP order for all the internet related product.
+
+question: Public WAN/LAN IP address for testing purpose ?
+answer: SHINE do not reserve specific testing IP address for customer to do the testing. However, customer can still raise the work order and close the work order once the testing IP address is Provisioned (Please take note, the charges is applied). 
+
+question: TATA IZO Project
+answer: TATA IZO Project is utilized on the SWE Intranet Product where 10.200.132.0/24 is reserved and this cannot be shared with the rest of the customer.
+
+question: Type of BGP Advertisement Route ?
+answer: Basically there are two type of BGP Advertisement Route, which is Community Full Default Out and Standard Default Out.
+
+question: Type of Routers and the functionality ?
+answer: Only Cisco Router ASR 1000 can support Community Full Default Out.
+
+question: IP filtering to be done by the customer end or the CE end.
+answer: The reason why IP to be filter by CE is because it's advisable to be filter by CE and CE is the endpoint of the customer network.
+
+question: Maximum Bandwidth for router model HP MSR3012, HP MSR3016 and Cisco 4451
+answer: Router model HP MSR3012 and Cisco 4451 can only supported up to 1Gbps
+
+question: Maximum Bandwidth for router model HP MSR954 and Cisco 4321
+answer: Router model HP MSR954 and Cisco 4321 can only supported up to 100Mbps
+
+question: Hearing sheet is require when customer require StarHub to configure customer's ASN number or Customer's IP address into the StarHub network
+answer: Hearing sheet is mandatory if customer request to peering their ASN number to StarHub's ASN number.
+
+question: What is the meaning of Standard CPE or Bundle Router ?
+answer: It can be one of the router models that product had 'productised', these product purchase and send to warehouse, SHINE FE will draw from warehouse to deploy
+
+question: What is the meaning of Non Standard CPE ?
+answer: if the router models is not 'productised' model, it could be from ISD or 3rd party vendor.
+
+question: Router Management can be StarHub or Customer.
+answer: StarHub managed router mean SHINE FE set the router admin password to 'StarHub common password', it is not released to customer, IPNOC will be able to remote login with the 'StarHub common password' and Starhub is the one to manage the router configuration. Customer managed router mean SHINE FE will send a simple password & handover to Customer. Customer suppose to manage the router configuration, likely customer will change & StarHub no longer able to login.
+
+question: What is non standard router management ?
+answer: Router management is managed by ISD or third party SI. The router password suppose to be shared with MSOC and ISD and third party SI. This means IPNOC and SHINE FE are not able to access these routers and ISD or third party SI is the one to manage the router configuration.
+
+question: What is the StarHub Network Trunk SID to be used for 10G PCTN Premium Internet Product ?
+answer: The Premium Internet SID does not affect by the Network Trunk SID.
+
+question: Value Internet Product
+answer: This is a new internet product (2024), and the it's only provisioned as Public WAN IPv4 /30 only for the IP configuration.
+
+question: MSOC Monitoring for SWE-Intranet Product
+answer: MSOC Monitoring service can be request by Customer via Non Standard Solution.
+
+question: WAN IPv4 assignemnt for Value Internet +, Value Internet, Premium Internet, Business Internet.
+answer: PE is the first usable IP address where CE is the last usable IP address
+
+
+question: MRTG Provisioning in Siebel Workflow
+answer: As of current process, BDM is the one to provision once the order is received in SHIFT and then Sales Ops is the one to trigger the welcome email to customer upon the RFS date or order completion date.
+
+question: MRTG Provisioning in ITX Workflow
+answer: As long as the MRTG is enable in ITX, then system will auto provisioning and then Sales Ops is the one to trigger the welcome email to customer upon the RFS date or order completion date
+
+question: What is the Number of Prefixes for BGP Routing Protocol
+answer: The default Prefixes is 20 for Value Internet + and Business Internet product.
+
+question: What is the usable number of LAN IPv4 address 
+answer: The default LAN IPv4 is /29 for Value Internet, which is 6 usable IP
+
+question: What is the usable number of LAN IPv4 address 
+answer: The default LAN IPv4 is /28 for Business Internet and Premium Internet, which is 14 usable IP
+
+question: If the x ref to other Service Id is SDH SID, Where SDH SID is begin with 1880%
+answer: Termination order is needed If the x ref to other Service Id is SDH SID, this is because SDH related product already sunset and it should be migrated to PCTN access. Do check with Product for more information.
+
+question: Maximum burstable bandwidth policy
+answer: Max burstable bandwidth is recommended to be up to 3 times that of CIR value (e.g. 1G burstable to 3G)
+
+question: BGP MD5 password for Internet services
+answer: Default MD5 password is set as the Service ID. Can alternatively request for complex password, which will be generated by BDM.
+
+question: SiX BFD policy
+answer: The BFD interval shall be no lesser than < 300ms and multiplier no lesser than < 3
+
+question: What is StarHub ASN?
+answer: For Premium Internet service requiring BGP, customer is to peer with AS 4657. For Value Internet + and Business Internet requiring BGP, customer is to peer with AS 9874
+
+question: Private ASN request for Internet services
+answer: A 4-byte private ASN range will be assigned by BDM when requested for  BGP related Internet services.
+
+question: RTBH requests
+answer: StarHub has deployed the community based BGP import policy on PE router since 1st May 2024. Refer to the document (StarHub Customer BGP Communities Policy v6.4) for more information.
+
+question: Community tagging requests
+answer: StarHub has deployed the community based BGP import policy on PE router since 1st May 2024. Refer to the document (StarHub Customer BGP Communities Policy v6.4) for more information.
+
+question: Does Premium Internet, Value Internet +, Business Internet support MED/AS-Prepend  ?
+answer: Yes, MED/AS-Prepend to be supported in CE only.
+
+question: What is the ASN peering between Megaport and StarHub SWE Intranet Network ?
+answer: StarHub SWE Intranet network is ASN 9874 while Google Cloud ASN 16550 and Microsoft Azure Cloud ASN 12076.
+
+question: Can LPT be supported by SWE Intranet, Premium Internet, Value Internet +, Business Internet and Value Internet ?
+answer: No
+
+question: Subscribed bandwidth lower or equal to 4G
+answer: Default to be PCTN access for SWE Intranet, Premium Internet, Value Internet +, Business Internet and Value Internet Product
+
+question: Subscribed bandwidth higher than 4G
+answer: Default to be SDS DWS access for SWE Intranet, Premium Internet, Value Internet +, Business Internet and Value Internet Product
+
+question: What is the port speed for SWE Intranet, Premium Internet, Value Internet +, Business Internet and Value Internet (Facing MDF Mux) ?
+answer: 1000BaseT
+
+question: What is the port medium for SWE Intranet, Premium Internet, Value Internet +, Business Internet and Value Internet ?
+answer: Copper
+
+question: What is the default MTU size for SWE Intranet, Premium Internet, Value Internet +, Business Internet and Value Internet ?
+answer: The default MTU size for SWE Intranet, Premium Internet, Value Internet +, Business Internet and Value Internet is 1500.
+
+question: What is the default Jumbo Frame size for SWE Intranet, Premium Internet, Value Internet +, Business Internet and Value Internet?
+answer: The default Jumbo frame size for SWE Intranet, Premium Internet, Value Internet +, Business Internet and Value Internet is 9000 exclude for NGN access.
+
+question: What is Grey Management ?
+answer: Grey management to be enable for IPNOC or SHINE FE to remote login to the router.
+

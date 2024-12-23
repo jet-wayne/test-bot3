@@ -1,0 +1,37 @@
+steps:
+  # Build the Docker image
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "build",
+        "-t",
+        "asia-southeast1-docker.pkg.dev/$PROJECT_ID/starhub-faq-search/frontend",
+        ".",
+      ]
+
+  # Push the Docker image to Artifact Registry
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "push",
+        "asia-southeast1-docker.pkg.dev/$PROJECT_ID/starhub-faq-search/frontend",
+      ]
+
+  # Deploy to Cloud Run
+  - name: "google/cloud-sdk"
+    entrypoint: "gcloud"
+    args:
+      - "run"
+      - "deploy"
+      - "starhub-faq-chatbot-frontend" # Service name
+      - "--image"
+      - "asia-southeast1-docker.pkg.dev/$PROJECT_ID/starhub-faq-search/frontend"
+      - "--region"
+      - "asia-southeast1"
+      - "--platform"
+      - "managed"
+      - "--allow-unauthenticated"
+# # Optionally, set substitutions for flexibility
+# substitutions:
+#   _SERVICE_NAME: "starhub-faq-search"
+#   _REGION: "asia-southeast1"
